@@ -539,22 +539,22 @@
   transform: scaleX(1);
 }
  
-.Content {
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
- 
-.HeadingH1Bold-Desktop {
-  font-size: 60px;
+.SubtitleSemiBold-Desktop {
+  font-size: 20px;
   font-style: normal;
   font-family: Inter;
   font-weight: 700px;
   font-stretch: normal;
-  letter-spacing: -0.02em;
+  letter-spacing: 0em;
+}
+ 
+.SubtitleSemiBold-Tablet&Mobile {
+  font-size: 18px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700px;
+  font-stretch: normal;
+  letter-spacing: 0em;
 }
  
 .HeadingH1Bold-Tablet {
@@ -566,11 +566,11 @@
   letter-spacing: -0.02em;
 }
  
-.HeadingH1SemiBold-Mobile {
-  font-size: 36px;
+.Body3Medium-All {
+  font-size: 14px;
   font-style: normal;
   font-family: Inter;
-  font-weight: 700px;
+  font-weight: 500px;
   font-stretch: normal;
   letter-spacing: 0em;
 }
@@ -584,8 +584,8 @@
   letter-spacing: -0.02em;
 }
  
-.HeadingH2SemiBold-Tablet&Mobile {
-  font-size: 18px;
+.HeadingH1Bold-Desktop {
+  font-size: 60px;
   font-style: normal;
   font-family: Inter;
   font-weight: 700px;
@@ -593,7 +593,61 @@
   letter-spacing: -0.02em;
 }
  
-.HeadingH3SemiBold-Desktop {
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+.Body2SemiBold-All {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700px;
+  font-stretch: normal;
+  letter-spacing: 0em;
+}
+ 
+.HeadingH3Bold-Tablet&Mobile {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700px;
+  font-stretch: normal;
+  letter-spacing: -0.02em;
+}
+ 
+.Body1Normal-Tablet&Mobile {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 400px;
+  font-stretch: normal;
+  letter-spacing: 0em;
+}
+ 
+.Body2Medium-All {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500px;
+  font-stretch: normal;
+  letter-spacing: 0em;
+}
+ 
+.HeadingH1SemiBold-Mobile {
+  font-size: 36px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700px;
+  font-stretch: normal;
+  letter-spacing: 0em;
+}
+ 
+.HeadingH3Bold-Desktop {
   font-size: 30px;
   font-style: normal;
   font-family: Inter;
@@ -611,7 +665,7 @@
   letter-spacing: -0.02em;
 }
  
-.HeadingH3Bold-Desktop {
+.HeadingH3SemiBold-Desktop {
   font-size: 30px;
   font-style: normal;
   font-family: Inter;
@@ -620,17 +674,8 @@
   letter-spacing: -0.02em;
 }
  
-.HeadingH3Bold-Tablet&Mobile {
-  font-size: 24px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 700px;
-  font-stretch: normal;
-  letter-spacing: -0.02em;
-}
- 
-.SubtitleNormal-Desktop {
-  font-size: 20px;
+.Body2Normal-All-Underline {
+  font-size: 16px;
   font-style: normal;
   font-family: Inter;
   font-weight: 400px;
@@ -638,11 +683,20 @@
   letter-spacing: 0em;
 }
  
-.SubtitleSemiBold-Desktop {
-  font-size: 20px;
+.HeadingH2SemiBold-Tablet&Mobile {
+  font-size: 18px;
   font-style: normal;
   font-family: Inter;
   font-weight: 700px;
+  font-stretch: normal;
+  letter-spacing: -0.02em;
+}
+ 
+.Body3Normal-All {
+  font-size: 14px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 400px;
   font-stretch: normal;
   letter-spacing: 0em;
 }
@@ -656,11 +710,11 @@
   letter-spacing: 0em;
 }
  
-.SubtitleSemiBold-Tablet&Mobile {
-  font-size: 18px;
+.SubtitleNormal-Desktop {
+  font-size: 20px;
   font-style: normal;
   font-family: Inter;
-  font-weight: 700px;
+  font-weight: 400px;
   font-stretch: normal;
   letter-spacing: 0em;
 }
@@ -674,65 +728,11 @@
   letter-spacing: 0em;
 }
  
-.Body1Normal-Tablet&Mobile {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 400px;
-  font-stretch: normal;
-  letter-spacing: 0em;
-}
- 
 .Body2Normal-All {
   font-size: 16px;
   font-style: normal;
   font-family: Inter;
   font-weight: 400px;
-  font-stretch: normal;
-  letter-spacing: 0em;
-}
- 
-.Body2SemiBold-All {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 700px;
-  font-stretch: normal;
-  letter-spacing: 0em;
-}
- 
-.Body2Medium-All {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 500px;
-  font-stretch: normal;
-  letter-spacing: 0em;
-}
- 
-.Body2Normal-All-Underline {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 400px;
-  font-stretch: normal;
-  letter-spacing: 0em;
-}
- 
-.Body3Normal-All {
-  font-size: 14px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 400px;
-  font-stretch: normal;
-  letter-spacing: 0em;
-}
- 
-.Body3Medium-All {
-  font-size: 14px;
-  font-style: normal;
-  font-family: Inter;
-  font-weight: 500px;
   font-stretch: normal;
   letter-spacing: 0em;
 }

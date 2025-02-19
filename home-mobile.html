@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>HomeMobile - exported project</title>
+    <meta property="og:title" content="HomeMobile - exported project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./home-mobile.css" rel="stylesheet" />
+
+      <div class="home-mobile-container1">
+        <div class="home-mobile-home-mobilei-phone8-light">
+          <div class="home-mobile-header">
+            <div class="home-mobile-container2">
+              <span class="home-mobile-text100">Ana Cristina Moya</span>
+              <button class="home-mobile-icon-button1">
+                <img
+                  src="public/external/iconi403-jua8.svg"
+                  alt="IconI403"
+                  class="home-mobile-icon1"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="home-mobile-hero">
+            <div class="home-mobile-container3">
+              <div class="home-mobile-column10">
+                <img
+                  src="public/external/anitamoya24071-f0b-200w.png"
+                  alt="AnitaMoya24071"
+                  class="home-mobile-anita-moya2"
+                />
+              </div>
+              <div class="home-mobile-column11">
+                <div class="home-mobile-content1">
+                  <span class="home-mobile-text101 HeadingH1SemiBold-Mobile">
+                    <span>Hi, I’m Ana</span>
+                    <br />
+                    <span>Cristina 👋</span>
+                  </span>
+                  <span class="home-mobile-text105 Body2Normal-All">
+                    I'm a results-driven Product Manager with 19 years of
+                    experience bringing technical expertise as an Electronic and
+                    Telecommunications Engineer with the strategic and business
+                    insights of a Master of Marketing. Proven ability to
+                    translate market needs and data-analysis&nbsp;into
+                    innovative solutions, consistently generating value and
+                    increasing sales through successful product development and
+                    project management. Expertise in collaborating with
+                    cross-functional teams to lead all stages of the product
+                    life-cycle, from market research and strategic planning to
+                    development, deployment, and go-to-market execution.
+                  </span>
+                </div>
+                <div class="home-mobile-group10">
+                  <div class="home-mobile-location">
+                    <img
+                      src="public/external/icon4036-gwbj.svg"
+                      alt="Icon4036"
+                      class="home-mobile-icon2"
+                    />
+                    <span class="home-mobile-text106 Body2Normal-All">
+                      Cali, Colombia
+                    </span>
+                  </div>
+                  <div class="home-mobile-hire">
+                    <div class="home-mobile-icon3">
+                      <div class="home-mobile-icondotemerald500"></div>
+                    </div>
+                    <span class="home-mobile-text107 Body2Normal-All">
+                      Available for new job oportunities
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-mobile-actions">
+                <div class="home-mobile-frame1">
+                  <span class="home-mobile-text108">
+                    anacristina.moya@gmail.com
+                  </span>
+                  <div class="home-mobile-email11">
+                    <div class="home-mobile-group1">
+                      <div class="home-mobile-group11">
+                        <div class="home-mobile-group12">
+                          <img
+                            src="public/external/vectori407-t8al.svg"
+                            alt="VectorI407"
+                            class="home-mobile-vector1"
+                          />
+                        </div>
+                      </div>
+                      <div class="home-mobile-group13">
+                        <div class="home-mobile-group14">
+                          <img
+                            src="public/external/vectori407-b3zn.svg"
+                            alt="VectorI407"
+                            class="home-mobile-vector2"
+                          />
+                        </div>
+                      </div>
+                      <div class="home-mobile-group15">
+                        <div class="home-mobile-group16">
+                          <img
+                            src="public/external/vectori407-dqy8.svg"
+                            alt="VectorI407"
+                            class="home-mobile-vector3"
+                          />
+                        </div>
+                      </div>
+                      <div class="home-mobile-group17">
+                        <div class="home-mobile-group18">
+                          <img
+                            src="public/external/vectori407-h92.svg"
+                            alt="VectorI407"
+                            class="home-mobile-vector4"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-mobile-call1">
+                    <div class="home-mobile-group19">
+                      <div class="home-mobile-group20">
+                        <img
+                          src="public/external/vectori407-hh27.svg"
+                          alt="VectorI407"
+                          class="home-mobile-vector5"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="home-mobile-text109">+57 301 7864054</span>
+                  <span class="home-mobile-text110">ana-cristina-moya</span>
+                  <img
+                    src="public/external/linkedin114079-w79.svg"
+                    alt="linkedin114079"
+                    class="home-mobile-linkedin111"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-mobile-about">
+            <div class="home-mobile-container4">
+              <div class="home-mobile-row10">
+                <div class="home-mobile-row11">
+                  <div class="home-mobile-tag1">
+                    <span class="home-mobile-text111 Body3Medium-All">
+                      About me
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-mobile-row12">
+                <div class="home-mobile-column12">
+                  <div class="home-mobile-pic-container">
+                    <img
+                      src="public/external/anitaherzo214063-xhxg-300h.png"
+                      alt="AnitaHerzo214063"
+                      class="home-mobile-anita-herzo21"
+                    />
+                  </div>
+                </div>
+                <div class="home-mobile-column13">
+                  <span
+                    class="home-mobile-text112 HeadingH3SemiBold-Tablet&amp;Mobile"
+                  >
+                    Curious about me? Here you have it:
+                  </span>
+                  <div class="home-mobile-content2">
+                    <span class="home-mobile-text113 Body2Normal-All">
+                      <span>
+                        I am an electronic and telecommunications engineer with
+                        a master's in marketing, which gives me a perfect
+                        combination of technical and marketing knowledge. The
+                        last 19 years in the product industry have given me a
+                        deep understanding of the entire product life cycle,
+                        from product ideation, and market research to
+                        go-to-market strategy.  
+                      </span>
+                      <br />
+                      <span></span>
+                      <br />
+                      <span>
+                        I've generated value and increased sales throughout my
+                        career through successful product development and
+                        project management. My experience at adidas, as a
+                        Product Owner for the e-Commerce back end, allowed me to
+                        collaborate effectively with cross-functional teams,
+                        from different regions, manage complex initiatives, and
+                        deliver results in an agile environment. Additionally,
+                        my prior roles at Samsung exposed me to the dynamic
+                        world of mobile applications and services and reinforced
+                        my ability to understand customer needs and translate
+                        them into successful products.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-mobile-skills">
+            <div class="home-mobile-container5">
+              <div class="home-mobile-row13">
+                <div class="home-mobile-row14">
+                  <div class="home-mobile-tag2">
+                    <span class="home-mobile-text119 Body3Medium-All">
+                      Skills
+                    </span>
+                  </div>
+                </div>
+                <div class="home-mobile-row15">
+                  <span
+                    class="home-mobile-text120 SubtitleNormal-Tablet&amp;Mobile"
+                  >
+                    <span class="home-mobile-text121">
+                      The skills and tools I am really good at:
+                    </span>
+                    <br />
+                    <br />
+                    <span class="home-mobile-text124">Skills</span>
+                    <br />
+                    <span class="home-mobile-text126">Scrum Master</span>
+                    <br />
+                    <span class="home-mobile-text128">Agile Methodologies</span>
+                    <br />
+                    <span class="home-mobile-text130">Project Management</span>
+                    <br />
+                    <span class="home-mobile-text132">Product Management</span>
+                    <br />
+                    <span class="home-mobile-text134">Alliance Management</span>
+                    <br />
+                    <span class="home-mobile-text136">Product Owner</span>
+                    <br />
+                    <span class="home-mobile-text138">Data Analysis&nbsp;</span>
+                    <br />
+                    <span class="home-mobile-text140">Marketing</span>
+                    <br />
+                    <span class="home-mobile-text142">
+                      Roadmap Mobile Applications
+                    </span>
+                    <br />
+                    <span class="home-mobile-text144">
+                      Stakeholder Management Technical Background
+                    </span>
+                    <br />
+                    <span class="home-mobile-text146">Accountable</span>
+                    <br />
+                    <span class="home-mobile-text148">Storytelling</span>
+                    <br />
+                    <span class="home-mobile-text150">Adaptability</span>
+                    <br />
+                    <br />
+                    <span class="home-mobile-text153">Tools:</span>
+                    <br />
+                    <span>Figma</span>
+                    <br />
+                    <span>Miro</span>
+                    <br />
+                    <span>Jira</span>
+                    <br />
+                    <span>Confluence</span>
+                    <br />
+                    <span>Kibana</span>
+                    <br />
+                    <span>Excel for Data Science</span>
+                    <br />
+                    <span>Power BI</span>
+                    <br />
+                    <span>Python</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-mobile-experience">
+            <div class="home-mobile-container6">
+              <div class="home-mobile-row16">
+                <div class="home-mobile-row17">
+                  <div class="home-mobile-tag3">
+                    <span class="home-mobile-text170 Body3Medium-All">
+                      Experience
+                    </span>
+                  </div>
+                </div>
+                <div class="home-mobile-row18">
+                  <span class="home-mobile-text171 SubtitleNormal-Desktop">
+                    Here is a quick summary of my Job Experience:
+                  </span>
+                </div>
+              </div>
+              <div class="home-mobile-row19">
+                <div class="home-mobile-row20">
+                  <div class="home-mobile-column14">
+                    <div class="home-mobile-logoupwork">
+                      <div class="home-mobile-clippathgroup">
+                        <img
+                          src="public/external/adidas14079-vel-200h.png"
+                          alt="adidas14079"
+                          class="home-mobile-adidas1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-mobile-column15">
+                    <span class="home-mobile-text172 Body2Normal-All">
+                      May 2021- Jan 2025
+                    </span>
+                  </div>
+                  <div class="home-mobile-column16">
+                    <span class="home-mobile-text173 SubtitleSemiBold-Desktop">
+                      Product Owner Order Processing / Order to Consumer
+                    </span>
+                    <div class="home-mobile-column17">
+                      <span class="home-mobile-text174 Body2Normal-All">
+                        <span class="home-mobile-text175">
+                          Creating measurable value in the adidas eCommerce
+                          back-end platform, addressing market opportunities and
+                          customer/user needs, and following the implementation
+                          of different initiatives through their life-cycle
+                          while collaborating with Agile Expert and Engineers to
+                          build a high-performing team.&nbsp;
+                        </span>
+                        <br />
+                        <span class="home-mobile-text177">
+                          Brazil New Warehouse (2023):
+                        </span>
+                        <span class="home-mobile-text178">
+                          Implementation of the E-invoicing integration changes
+                          required to integrate Omni with a new Warehouse in
+                          Brazil, including Return, Split Shipment, and Delivery
+                          Exception functionalities. Expecting Net sales
+                          increase of €4.3M during the first year.
+                        </span>
+                        <br />
+                        <span class="home-mobile-text180">
+                          LAM Personalization (2022):
+                        </span>
+                        <span class="home-mobile-text181">
+                          Developing the Integration with the Warehouse to
+                          identify customized orders and changes in the
+                          e-invoicing to roll out this functionality in the
+                          eCommerce in LAM countries. This initiative
+                          facilitates LAM to generate 31% Net Sales Shares of
+                          World Cup products.
+                        </span>
+                        <br />
+                        <span class="home-mobile-text183">
+                          Brazil Roll out (2021 - 2022):
+                        </span>
+                        <span>
+                          Implementation of the eCommerce back-end deviation
+                          during the Brazil Omnichannel roll-out, including
+                          Offline Payment, Installments, e-invoices tax
+                          calculation and invoice generation, and Error
+                          Handling. Allowing 2.3M invoices generated every year.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-mobile-row21">
+                <div class="home-mobile-row22">
+                  <div class="home-mobile-column18">
+                    <img
+                      src="public/external/samsunglogo14079-agkm-200h.png"
+                      alt="samsunglogo14079"
+                      class="home-mobile-samsunglogo1"
+                    />
+                  </div>
+                  <div class="home-mobile-column19"></div>
+                  <div class="home-mobile-column20">
+                    <span class="home-mobile-text185 Body2Normal-All">
+                      May 2019 - Nov 2020
+                    </span>
+                    <span class="home-mobile-text186 SubtitleSemiBold-Desktop">
+                      GTM and Partner Alliance Manager
+                    </span>
+                    <div class="home-mobile-column21">
+                      <span class="home-mobile-text187 Body2Normal-All">
+                        <span>
+                          Led the development and execution of holistic
+                          go-to-market plans for 10 new products (smartphones,
+                          tablets, wearables), increasing Premium sales.&nbsp;
+                        </span>
+                        <br />
+                        <br />
+                        <span>
+                          Collaborated with Product, Marketing, and Sales teams
+                          to define detailed go-to-market plans, including
+                          schedules, risk assessment, and communication
+                          strategies, resulting in on-time launch.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="home-mobile-column22">
+                    <span class="home-mobile-text192 Body2Normal-All">
+                      Mar 2016 - Apr 2019
+                    </span>
+                    <span class="home-mobile-text193 SubtitleSemiBold-Desktop">
+                      App Store Content Manager
+                    </span>
+                    <div class="home-mobile-column23">
+                      <span class="home-mobile-text194 Body2Normal-All">
+                        <span class="home-mobile-text195">
+                          Owned the product strategy and roadmap for strategic
+                          services and applications within the Samsung App
+                          Store, driving user engagement and device sales
+                          increase. Led the end-to-end product development
+                          life-cycle for multiple products, including market
+                          research, user needs analysis, feature prioritization,
+                          and go-to-market execution.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="home-mobile-text198">
+                          Trade-in (2018 - 2020):
+                        </span>
+                        <span>
+                          The Online and On-site trade-in program allowed
+                          customers to exchange old smartphones for discounts on
+                          new purchases. Integrates with financing, offering up
+                          to 50% off. Drove 46% of Galaxy Note20 sales at
+                          launch.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="home-mobile-column24">
+                    <span class="home-mobile-text200 Body2Normal-All">
+                      Jun 2010 - Feb 2016
+                    </span>
+                    <span class="home-mobile-text201 SubtitleSemiBold-Desktop">
+                      App Store Content Supervisor / Assistant Manager
+                    </span>
+                    <div class="home-mobile-column25">
+                      <span class="home-mobile-text202 Body2Normal-All">
+                        <span class="home-mobile-text203">
+                          Apps and Content Development, including Market
+                          Research, Product Strategy, Product Design,
+                          Prioritization, Marketing communication, Budget, and
+                          Contracts.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="home-mobile-text206">
+                          Samsung Concierge Application (2015-2016):
+                        </span>
+                        <span>
+                          Loyalty App where Premium customers receive exclusive
+                          benefits such as 24/7 agents to support their device's
+                          questions and technical issues via chat/call.
+                          Salesforce integration. Increase Premium sales. Best
+                          LATAM case.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-mobile-contactme">
+            <div class="home-mobile-container7">
+              <div class="home-mobile-row23">
+                <div class="home-mobile-row24">
+                  <div class="home-mobile-tag4">
+                    <span class="home-mobile-text208 Body3Medium-All">
+                      Get in touch
+                    </span>
+                  </div>
+                </div>
+                <div class="home-mobile-row25">
+                  <span class="home-mobile-text209 SubtitleNormal-Desktop">
+                    What’s next? Feel free to reach out to me if you're looking
+                    for a developer, have a query, or simply want to connect.
+                  </span>
+                </div>
+              </div>
+              <div class="home-mobile-column26">
+                <div class="home-mobile-email">
+                  <img
+                    src="public/external/icon4039-cpx5.svg"
+                    alt="Icon4039"
+                    class="home-mobile-icon4"
+                  />
+                  <span
+                    class="home-mobile-text210 HeadingH2SemiBold-Tablet&amp;Mobile"
+                  >
+                    anacristina.moya@gmail.com
+                  </span>
+                  <button class="home-mobile-icon-button2">
+                    <img
+                      src="public/external/iconi403-bu1i.svg"
+                      alt="IconI403"
+                      class="home-mobile-icon5"
+                    />
+                  </button>
+                </div>
+                <div class="home-mobile-phone">
+                  <img
+                    src="public/external/icon4039-ksta.svg"
+                    alt="Icon4039"
+                    class="home-mobile-icon6"
+                  />
+                  <span
+                    class="home-mobile-text211 HeadingH2SemiBold-Tablet&amp;Mobile"
+                  >
+                    +57 3017864054
+                  </span>
+                  <button class="home-mobile-icon-button3">
+                    <img
+                      src="public/external/iconi403-cnkg.svg"
+                      alt="IconI403"
+                      class="home-mobile-icon7"
+                    />
+                  </button>
+                </div>
+                <div class="home-mobile-linked-in">
+                  <img
+                    src="public/external/linkedin114071-k837.svg"
+                    alt="linkedin114071"
+                    class="home-mobile-linkedin112"
+                  />
+                  <span
+                    class="home-mobile-text212 HeadingH2SemiBold-Tablet&amp;Mobile"
+                  >
+                    ana-cristina.moya
+                  </span>
+                  <button class="home-mobile-icon-button4">
+                    <img
+                      src="public/external/iconi407-yyx.svg"
+                      alt="IconI407"
+                      class="home-mobile-icon8"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-mobile-footer">
+            <div class="home-mobile-container8">
+              <div class="home-mobile-footer-note">
+                <img
+                  src="public/external/icon4039-z3z.svg"
+                  alt="Icon4039"
+                  class="home-mobile-icon9"
+                />
+                <span class="home-mobile-text213">
+                  <span class="home-mobile-text214">2023 |</span>
+                  <span class="home-mobile-text215">Designed</span>
+                  <span class="home-mobile-text216">and</span>
+                  <span class="home-mobile-text217">coded</span>
+                  <span class="home-mobile-text218">with</span>
+                  <span class="home-mobile-text219">❤</span>
+                  <span>️️ by Sagar Shah</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
